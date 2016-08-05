@@ -544,17 +544,17 @@ a, b {
 }
 
 a, a:visited {
-  color: #5c2431;
+  color: #6e2b3b;
   text-decoration: none;
   border-bottom: 1px solid #ededed;
 }
 a:hover, a:focus {
-  color: #00C09C;
+  color: #a54058;
   border-color: #bbb;
 }
 
 .at {
-  color: #B3DFCA;
+  color: #a54058;
 }
 
 .deb {
