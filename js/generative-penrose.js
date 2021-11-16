@@ -4,7 +4,7 @@ let ds;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   ds = new PenroseLSystem();
-  ds.simulate(5);
+  ds.simulate(3);
 }
 
 function windowResized() {
@@ -84,7 +84,7 @@ PenroseLSystem.prototype.iterate = function() {
 PenroseLSystem.prototype.render = function () {
     translate(width / 2, height / 2);
 
-    this.steps += 40;
+    this.steps += 15;
     if(this.steps > this.production.length) {
       this.steps = this.production.length;
     }
