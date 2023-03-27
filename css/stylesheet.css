@@ -11,7 +11,7 @@ body {
   font-weight: 500;
   margin: 0;
   background-color: rgb(255, 218, 237);
-  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=27887), auto !important;
+  cursor: url(../images/small-cursor.cur), auto !important;
 }
 
 p {
@@ -46,17 +46,17 @@ a, a:visited {
   text-decoration: none;
   font-size: 0.9em;
   font-weight: 300;
-  cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;;
+  cursor: url(../images/small-pointer.cur), auto !important;
 }
 
 a:hover {
   border-bottom: 1px solid white;
-  cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;;
+  cursor: url(../images/small-pointer.cur), auto !important;
 }
 
 a:focus {
   border-bottom: 1px solid #ff67af;
-  cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;;
+  cursor: url(../images/small-pointer.cur), auto !important;
 }
 
 .sites {
