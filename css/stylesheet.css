@@ -49,8 +49,13 @@ a, a:visited {
   cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;;
 }
 
-a:hover, a:focus {
+a:hover {
   border-bottom: 1px solid white;
+  cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;;
+}
+
+a:focus {
+  border-bottom: 1px solid #ff67af;
   cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;;
 }
 
