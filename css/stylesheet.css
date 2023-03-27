@@ -7,21 +7,14 @@ body {
   display: flex;
   align-items: center;
   color: white;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-weight: 500;
   margin: 0;
-  background-color: black;
-}
-
-h3 {
-  font-size: 1.45em;
-  font-weight: 400;
-  margin: 14px 0;
-  color: white
+  background-color: rgb(255, 218, 237);
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=27887), auto !important;
 }
 
 p {
-  font-size: 1.2em;
-  font-weight: 300;
   margin: 1rem 0 1.5rem 0;
 }
 
@@ -32,47 +25,33 @@ canvas {
   z-index: 0;
 }
 
-@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
-  .outer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    max-height: 100%;
-    width: 18rem;
-    z-index: 1;
-    background: rgba(33, 33, 33, 0.2);
-    border-radius: 18px;
-    backdrop-filter: blur(0.6rem);
-    -webkit-backdrop-filter: blur(0.6rem)
-  }
-}
-
-/* don't apply backdrop-filter on unsupported browsers */
-@supports not ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
-  .outer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    max-height: 100%;
-    width: 18rem;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 18px;
-  }
+.outer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 100%;
+  width: 22rem;
+  z-index: 1;
 }
 
 .inner-container {
-  padding: 30px;
+  padding: 20px;
+  border: 2px solid #ff67af;
+  border-radius: 4px;
+  background-color: #ffa1c5;
 }
 
 a, a:visited {
   color: white;
+  border-bottom: 1px solid #ff67af;
   text-decoration: none;
   font-size: 0.9em;
   font-weight: 300;
+  cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;;
 }
 
 a:hover, a:focus {
-  border-color: #bbb;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid white;
+  cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;;
 }
 
 .sites {
@@ -85,4 +64,17 @@ a:hover, a:focus {
 .sites_item {
   display: inline;
   margin: 0px 10px;
+}
+
+.sprites {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.blurb {
+  font-size: 16px;
+
 }
