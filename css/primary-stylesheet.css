@@ -164,7 +164,7 @@ body {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   #text-and-graphic {
       flex-direction: column;
   }
