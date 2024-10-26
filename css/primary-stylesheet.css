@@ -76,7 +76,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 28px;
-  min-width: 424px;
+  max-width: 424px;
 }
 
 .intro {
