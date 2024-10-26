@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "dyslexie";
+  src:    url("../assets/fonts/DyslexieBold170695.ttf"),
+          url("../assets/fonts/DyslexieBoldItalic170695.ttf"),
+          url("../assets/fonts/DyslexieItalic170695.ttf"),
+          url("../assets/fonts/DyslexieRegular170695.ttf"),
+}
+
+@font-face {
+  font-family: "queue";
+  src:    url("../assets/fonts/queueBlack.otf"),
+}
+
+@font-face {
+  font-family: "queueBold";
+  src:    url("../assets/fonts/queueBold.otf"),
+}
+
+@font-face {
+  font-family: "queueLight";
+  src:    url("../assets/fonts/queueLight.otf"),
+}
+
+/* delete this comment line */
+
+.dyslexie {
+  font-family: "dyslexie"
+}
+
+.queue {
+  font-family: "queue"
+}
+
+body {
+  --default-width: 44px;
+  --default-height: 44px;
+  --red: #a84035;
+  --blue: #2b496e;
+  --green: #46613d;
+  --yellow: #b99333;
+  --light-red: #a8534b;
+  --black: #131313;
+  --highlight: #ffdb7f;
+  display: flex;
+  flex-direction: column;
+  font-family: queue;
+  background-color: #ffe4c4;
+  height: auto;
+  align-items: center;
+  margin: 24px;
+}
+
+#text-and-graphic {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+}
+
+#text-col, #graphic-col {
+  flex: 1;
+}
+
+#graphic-col img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  font-family: queueLight;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 28px;
+  min-width: 424px;
+}
+
+.intro {
+  color: var(--red);
+}
+
+.blurb {
+  display: flex;
+  max-width: 424px;
+  flex-direction: column;
+  text-align: left;
+  color: var(--blue);
+}
+
+.links > a {
+  color: var(--blue);
+  font-family: queueLight;
+  width: auto;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  font-weight: 300;
+  padding-bottom: 4px;
+}
+
+.links > a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+  background-color: var(--highlight);
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--green);
+  font-size: 18px;
+  line-height: 24px;
+  font-family: queueLight;
+  font-weight: 800;
+}
+
+.call-to-action a {
+  color: var(--green) !important;
+}
+
+.call-to-action a:hover {
+  background-color: var(--highlight);
+}
+
+#company-brand {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--light-red);
+}
+
+#company-name {
+  display: flex;
+  flex-direction: column;
+  height: var(--default-height);
+}
+
+#intersection-logo {
+  width: var(--default-width);
+  height: var(--default-height);
+}
+
+#menu-icon {
+  width: var(--default-width);
+  height: var(--default-height);
+
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+}
+
+#mobile-landing-graphic {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #text-and-graphic {
+      flex-direction: column;
+  }
+
+  #graphic-col {
+      display: none;
+  }
+
+  #mobile-landing-graphic {
+      display: flex;
+      margin-top: 24px;
+      max-width: 424px;
+  }
+}
